@@ -1,0 +1,465 @@
+main input debug: selecting program id=0
+mp4 demux debug: adding track[Id 0x1] video (enable) language eng
+mp4 demux warning: elst box found
+mp4 demux debug:    - [0] duration=11953539ms media time=0ms) rate=1.0
+mp4 demux debug: track[Id 0x2] read 35861 chunk
+mp4 demux warning: STTS table of 1 entries
+mp4 demux debug: track[Id 0x2] read 514796 samples length:11953s
+mp4 demux debug: adding track[Id 0x2] audio (enable) language eng
+main demux debug: using demux module "mp4"
+main input debug: looking for a subtitle file in C:\Users\User\Desktop\VLC_Crach_PoC\
+main decoder debug: looking for video decoder module matching "any": 19 candidates
+ModLoad: 6b1e0000 6b320000   C:\Program Files (x86)\VideoLAN\VLC\plugins\codec\libdav1d_plugin.dll
+ModLoad: 6b1e0000 6b320000   C:\Program Files (x86)\VideoLAN\VLC\plugins\codec\libdav1d_plugin.dll
+ModLoad: 1d680000 1d68f000   C:\Program Files (x86)\VideoLAN\VLC\plugins\codec\libcdg_plugin.dll
+ModLoad: 1d680000 1d68f000   C:\Program Files (x86)\VideoLAN\VLC\plugins\codec\libcdg_plugin.dll
+ModLoad: 21f30000 21f6b000   C:\Program Files (x86)\VideoLAN\VLC\plugins\codec\libjpeg_plugin.dll
+ModLoad: 21f30000 21f6b000   C:\Program Files (x86)\VideoLAN\VLC\plugins\codec\libjpeg_plugin.dll
+ModLoad: 64ed0000 64f16000   C:\Program Files (x86)\VideoLAN\VLC\plugins\codec\libpng_plugin.dll
+ModLoad: 64ed0000 64f16000   C:\Program Files (x86)\VideoLAN\VLC\plugins\codec\libpng_plugin.dll
+ModLoad: 6b820000 6b951000   C:\Program Files (x86)\VideoLAN\VLC\plugins\codec\libschroedinger_plugin.dll
+ModLoad: 6b820000 6b951000   C:\Program Files (x86)\VideoLAN\VLC\plugins\codec\libschroedinger_plugin.dll
+ModLoad: 64f20000 64f7a000   C:\Program Files (x86)\VideoLAN\VLC\plugins\codec\libtheora_plugin.dll
+ModLoad: 64f20000 64f7a000   C:\Program Files (x86)\VideoLAN\VLC\plugins\codec\libtheora_plugin.dll
+ModLoad: 6b960000 6ba9c000   C:\Program Files (x86)\VideoLAN\VLC\plugins\codec\libaom_plugin.dll
+ModLoad: 6b960000 6ba9c000   C:\Program Files (x86)\VideoLAN\VLC\plugins\codec\libaom_plugin.dll
+ModLoad: 6f5e0000 70dd8000   C:\Program Files (x86)\VideoLAN\VLC\plugins\codec\libavcodec_plugin.dll
+ModLoad: 6f5e0000 70dd8000   C:\Program Files (x86)\VideoLAN\VLC\plugins\codec\libavcodec_plugin.dll
+avcodec decoder debug: using ffmpeg Lavc58.134.100
+avcodec decoder debug: CPU flags: 0x000fd3db
+avcodec decoder debug: allowing 5 thread(s) for decoding
+avcodec decoder debug: codec (h264) started
+avcodec decoder debug: using frame thread mode with 5 threads
+main decoder debug: using video decoder module "avcodec"
+main decoder debug: looking for audio decoder module matching "any": 23 candidates
+ModLoad: 1d690000 1d69e000   C:\Program Files (x86)\VideoLAN\VLC\plugins\codec\libspdif_plugin.dll
+ModLoad: 1d690000 1d69e000   C:\Program Files (x86)\VideoLAN\VLC\plugins\codec\libspdif_plugin.dll
+ModLoad: 1e770000 1e799000   C:\Program Files (x86)\VideoLAN\VLC\plugins\codec\libspeex_plugin.dll
+ModLoad: 1e770000 1e799000   C:\Program Files (x86)\VideoLAN\VLC\plugins\codec\libspeex_plugin.dll
+ModLoad: 1d6a0000 1d6af000   C:\Program Files (x86)\VideoLAN\VLC\plugins\codec\libaes3_plugin.dll
+ModLoad: 1d6a0000 1d6af000   C:\Program Files (x86)\VideoLAN\VLC\plugins\codec\libaes3_plugin.dll
+ModLoad: 1e7a0000 1e7b2000   C:\Program Files (x86)\VideoLAN\VLC\plugins\codec\libaraw_plugin.dll
+ModLoad: 1e7a0000 1e7b2000   C:\Program Files (x86)\VideoLAN\VLC\plugins\codec\libaraw_plugin.dll
+ModLoad: 1e7c0000 1e87a000   C:\Program Files (x86)\VideoLAN\VLC\plugins\codec\libvorbis_plugin.dll
+ModLoad: 1e7c0000 1e87a000   C:\Program Files (x86)\VideoLAN\VLC\plugins\codec\libvorbis_plugin.dll
+ModLoad: 6bd20000 6bd60000   C:\Program Files (x86)\VideoLAN\VLC\plugins\codec\libflac_plugin.dll
+ModLoad: 6bd20000 6bd60000   C:\Program Files (x86)\VideoLAN\VLC\plugins\codec\libflac_plugin.dll
+ModLoad: 6ce10000 6ce6c000   C:\Program Files (x86)\VideoLAN\VLC\plugins\codec\libopus_plugin.dll
+ModLoad: 6ce10000 6ce6c000   C:\Program Files (x86)\VideoLAN\VLC\plugins\codec\libopus_plugin.dll
+ModLoad: 6d040000 6d0ac000   C:\Program Files (x86)\VideoLAN\VLC\plugins\codec\libmpg123_plugin.dll
+ModLoad: 6d040000 6d0ac000   C:\Program Files (x86)\VideoLAN\VLC\plugins\codec\libmpg123_plugin.dll
+ModLoad: 1d6b0000 1d6c0000   C:\Program Files (x86)\VideoLAN\VLC\plugins\codec\liblpcm_plugin.dll
+ModLoad: 1d6b0000 1d6c0000   C:\Program Files (x86)\VideoLAN\VLC\plugins\codec\liblpcm_plugin.dll
+ModLoad: 1e880000 1e892000   C:\Program Files (x86)\VideoLAN\VLC\plugins\codec\libg711_plugin.dll
+ModLoad: 1e880000 1e892000   C:\Program Files (x86)\VideoLAN\VLC\plugins\codec\libg711_plugin.dll
+ModLoad: 6d1b0000 6d1f8000   C:\Program Files (x86)\VideoLAN\VLC\plugins\codec\libfaad_plugin.dll
+ModLoad: 6d1b0000 6d1f8000   C:\Program Files (x86)\VideoLAN\VLC\plugins\codec\libfaad_plugin.dll
+main decoder debug: using audio decoder module "faad"
+main demux meta debug: looking for meta reader module matching "any": 2 candidates
+lua demux meta debug: Trying Lua scripts in C:\Users\User\AppData\Roaming\vlc\lua\meta\reader
+lua demux meta debug: Trying Lua scripts in C:\Program Files (x86)\VideoLAN\VLC\lua\meta\reader
+lua demux meta debug: Trying Lua playlist script C:\Program Files (x86)\VideoLAN\VLC\lua\meta\reader\filename.luac
+main demux meta debug: no meta reader modules matched
+main input debug: `file:///C:/Users/User/Desktop/VLC_Crach_PoC/PoC.mp4' successfully opened
+mp4 demux debug: elst (0) gives 0ms (movie)-> 0ms (track)
+mp4 demux debug: track[Id 0x1] using Sync Sample Box (stss)
+mp4 demux debug: stss gives 0 --> 0 (sample number)
+mp4 demux debug: elst (0) gives 0ms (movie)-> 0ms (track)
+main input debug: Buffering 0%
+faad decoder warning: decoded zero sample
+avcodec decoder debug: available hardware decoder output format 53 (dxva2_vld)
+main playlist debug: reusing audio output
+avcodec decoder debug: available hardware decoder output format 118 (d3d11va_vld)
+main generic debug: looking for aout stream module matching "any": 2 candidates
+main input debug: Buffering 25%
+avcodec decoder debug: available hardware decoder output format 174 (d3d11)
+avcodec decoder debug: available software decoder output format 0 (yuv420p)
+avcodec decoder debug: trying format d3d11va_vld
+ModLoad: 21bf0000 21c03000   C:\Program Files (x86)\VideoLAN\VLC\plugins\audio_output\libwasapi_plugin.dll
+ModLoad: 21bf0000 21c03000   C:\Program Files (x86)\VideoLAN\VLC\plugins\audio_output\libwasapi_plugin.dll
+main input debug: Buffering 50%
+main input debug: Buffering 75%
+main input debug: Buffering 100%
+main spu text debug: looking for text renderer module matching "any": 3 candidates
+main input debug: Stream buffering done (1250 ms in 13 ms)
+ModLoad: 6e780000 6ea0f000   C:\Program Files (x86)\VideoLAN\VLC\plugins\text_renderer\libfreetype_plugin.dll
+ModLoad: 6e780000 6ea0f000   C:\Program Files (x86)\VideoLAN\VLC\plugins\text_renderer\libfreetype_plugin.dll
+ModLoad: 21c10000 21c27000   C:\WINDOWS\SysWOW64\USP10.dll
+ModLoad: 21c10000 21c27000   C:\WINDOWS\SysWOW64\USP10.dll
+ModLoad: 6ea10000 6ec1c000   C:\WINDOWS\SysWOW64\Dwrite.dll
+ModLoad: 6ea10000 6ec1c000   C:\WINDOWS\SysWOW64\Dwrite.dll
+freetype spu text debug: Using DWrite backend
+freetype spu text debug: DWrite_GetFamily(): family name: Arial
+freetype spu text debug: DWrite_ParseFamily(): using font at index 0 with weight 400 for bold: 0, italic: 0
+freetype spu text debug: DWrite_ParseFamily(): using font at index 1 with weight 700 for bold: 1, italic: 0
+freetype spu text debug: DWrite_ParseFamily(): using font at index 2 with weight 400 for bold: 0, italic: 1
+freetype spu text debug: DWrite_ParseFamily(): using font at index 3 with weight 700 for bold: 1, italic: 1
+main spu text debug: using text renderer module "freetype"
+main scale debug: looking for video converter module matching "any": 24 candidates
+ModLoad: 218e0000 218f0000   C:\Program Files (x86)\VideoLAN\VLC\plugins\video_chroma\libi420_yuy2_sse2_plugin.dll
+ModLoad: 218e0000 218f0000   C:\Program Files (x86)\VideoLAN\VLC\plugins\video_chroma\libi420_yuy2_sse2_plugin.dll
+ModLoad: 21f70000 21f90000   C:\Program Files (x86)\VideoLAN\VLC\plugins\video_chroma\libi420_nv12_plugin.dll
+ModLoad: 21f70000 21f90000   C:\Program Files (x86)\VideoLAN\VLC\plugins\video_chroma\libi420_nv12_plugin.dll
+ModLoad: 64f80000 64f8f000   C:\Program Files (x86)\VideoLAN\VLC\plugins\video_chroma\libi420_yuy2_mmx_plugin.dll
+ModLoad: 64f80000 64f8f000   C:\Program Files (x86)\VideoLAN\VLC\plugins\video_chroma\libi420_yuy2_mmx_plugin.dll
+ModLoad: 6f1d0000 6f2c2000   C:\Program Files (x86)\VideoLAN\VLC\plugins\video_chroma\libswscale_plugin.dll
+ModLoad: 6f1d0000 6f2c2000   C:\Program Files (x86)\VideoLAN\VLC\plugins\video_chroma\libswscale_plugin.dll
+swscale scale debug: 32x32 (32x32) chroma: YUVA -> 16x16 (16x16) chroma: RGBA with scaling using Bicubic (good quality)
+main scale debug: using video converter module "swscale"
+main scale debug: looking for video converter module matching "any": 24 candidates
+ModLoad: 6bd60000 6bd87000   C:\Program Files (x86)\VideoLAN\VLC\plugins\video_chroma\libi420_rgb_sse2_plugin.dll
+ModLoad: 6bd60000 6bd87000   C:\Program Files (x86)\VideoLAN\VLC\plugins\video_chroma\libi420_rgb_sse2_plugin.dll
+ModLoad: 64f90000 64fa0000   C:\Program Files (x86)\VideoLAN\VLC\plugins\video_chroma\libi422_yuy2_sse2_plugin.dll
+ModLoad: 64f90000 64fa0000   C:\Program Files (x86)\VideoLAN\VLC\plugins\video_chroma\libi422_yuy2_sse2_plugin.dll
+ModLoad: 68550000 68568000   C:\Program Files (x86)\VideoLAN\VLC\plugins\video_chroma\libi420_rgb_mmx_plugin.dll
+ModLoad: 68550000 68568000   C:\Program Files (x86)\VideoLAN\VLC\plugins\video_chroma\libi420_rgb_mmx_plugin.dll
+ModLoad: 6b620000 6b62f000   C:\Program Files (x86)\VideoLAN\VLC\plugins\video_chroma\libi422_yuy2_mmx_plugin.dll
+ModLoad: 6b620000 6b62f000   C:\Program Files (x86)\VideoLAN\VLC\plugins\video_chroma\libi422_yuy2_mmx_plugin.dll
+ModLoad: 6ce70000 6ce82000   C:\Program Files (x86)\VideoLAN\VLC\plugins\video_chroma\libi420_rgb_plugin.dll
+ModLoad: 6ce70000 6ce82000   C:\Program Files (x86)\VideoLAN\VLC\plugins\video_chroma\libi420_rgb_plugin.dll
+ModLoad: 6b630000 6b63f000   C:\Program Files (x86)\VideoLAN\VLC\plugins\video_chroma\libyuy2_i422_plugin.dll
+ModLoad: 6b630000 6b63f000   C:\Program Files (x86)\VideoLAN\VLC\plugins\video_chroma\libyuy2_i422_plugin.dll
+ModLoad: 6ce90000 6ce9f000   C:\Program Files (x86)\VideoLAN\VLC\plugins\video_chroma\libi422_yuy2_plugin.dll
+ModLoad: 6ce90000 6ce9f000   C:\Program Files (x86)\VideoLAN\VLC\plugins\video_chroma\libi422_yuy2_plugin.dll
+ModLoad: 6d2d0000 6d2df000   C:\Program Files (x86)\VideoLAN\VLC\plugins\video_chroma\libgrey_yuv_plugin.dll
+ModLoad: 6d2d0000 6d2df000   C:\Program Files (x86)\VideoLAN\VLC\plugins\video_chroma\libgrey_yuv_plugin.dll
+ModLoad: 6d2e0000 6d2ef000   C:\Program Files (x86)\VideoLAN\VLC\plugins\video_chroma\libyuy2_i420_plugin.dll
+ModLoad: 6d2e0000 6d2ef000   C:\Program Files (x86)\VideoLAN\VLC\plugins\video_chroma\libyuy2_i420_plugin.dll
+ModLoad: 6d2f0000 6d2ff000   C:\Program Files (x86)\VideoLAN\VLC\plugins\video_chroma\libi420_yuy2_plugin.dll
+ModLoad: 6d2f0000 6d2ff000   C:\Program Files (x86)\VideoLAN\VLC\plugins\video_chroma\libi420_yuy2_plugin.dll
+ModLoad: 6d300000 6d30f000   C:\Program Files (x86)\VideoLAN\VLC\plugins\video_chroma\libi422_i420_plugin.dll
+ModLoad: 6d300000 6d30f000   C:\Program Files (x86)\VideoLAN\VLC\plugins\video_chroma\libi422_i420_plugin.dll
+ModLoad: 6dc70000 6dc97000   C:\Program Files (x86)\VideoLAN\VLC\plugins\d3d9\libdirect3d9_filters_plugin.dll
+ModLoad: 6dc70000 6dc97000   C:\Program Files (x86)\VideoLAN\VLC\plugins\d3d9\libdirect3d9_filters_plugin.dll
+ModLoad: 6e320000 6e353000   C:\Program Files (x86)\VideoLAN\VLC\plugins\d3d11\libdirect3d11_filters_plugin.dll
+ModLoad: 6e320000 6e353000   C:\Program Files (x86)\VideoLAN\VLC\plugins\d3d11\libdirect3d11_filters_plugin.dll
+ModLoad: 6dca0000 6dcae000   C:\Program Files (x86)\VideoLAN\VLC\plugins\video_chroma\libyuvp_plugin.dll
+ModLoad: 6dca0000 6dcae000   C:\Program Files (x86)\VideoLAN\VLC\plugins\video_chroma\libyuvp_plugin.dll
+yuvp scale debug: YUVP to YUVA converter
+main scale debug: using video converter module "yuvp"
+main video output debug: Deinterlacing available
+main video output debug: deinterlace -1, mode auto, is_needed 0
+main window debug: looking for vout window module matching "qt,any": 3 candidates
+qt window debug: requesting video window...
+QWidget::paintEngine: Should no longer be called
+main window debug: resized to 1366x632
+main window debug: resized to 1280x720
+main window debug: using vout window module "qt"
+main inhibit debug: looking for inhibit module matching "any": 1 candidates
+ModLoad: 6dcb0000 6dcbe000   C:\Program Files (x86)\VideoLAN\VLC\plugins\video_output\libwinhibit_plugin.dll
+ModLoad: 6dcb0000 6dcbe000   C:\Program Files (x86)\VideoLAN\VLC\plugins\video_output\libwinhibit_plugin.dll
+main inhibit debug: using inhibit module "inhibit"
+main video output debug: Opening vout display wrapper
+main vout display debug: looking for vout display module matching "any": 12 candidates
+ModLoad: 727e0000 72837000   C:\Program Files (x86)\VideoLAN\VLC\plugins\video_output\libdirect3d11_plugin.dll
+main window debug: resized to 1366x632
+ModLoad: 727e0000 72837000   C:\Program Files (x86)\VideoLAN\VLC\plugins\video_output\libdirect3d11_plugin.dll
+ModLoad: 72940000 72cd4000   C:\WINDOWS\SysWOW64\D3DCOMPILER_47.dll
+ModLoad: 72940000 72cd4000   C:\WINDOWS\SysWOW64\D3DCOMPILER_47.dll
+direct3d11 vout display debug: creating Vout EventThread
+direct3d11 vout display debug: Win32VoutCreateWindow
+main vout display debug: VoutDisplayEvent 'resize' 1366x632
+wasapi generic debug: modified format
+ModLoad: 73220000 73276000   C:\WINDOWS\SysWOW64\SensorsApi.dll
+ModLoad: 73220000 73276000   C:\WINDOWS\SysWOW64\SensorsApi.dll
+ModLoad: 6f550000 6f57e000   C:\WINDOWS\SysWOW64\SensorsNativeApi.V2.dll
+ModLoad: 6ded0000 6def2000   C:\WINDOWS\SysWOW64\SensorsUtilsV2.dll
+ModLoad: 6ded0000 6defe000   C:\WINDOWS\SysWOW64\SensorsNativeApi.V2.dll
+ModLoad: 6f550000 6f572000   C:\WINDOWS\SysWOW64\SensorsUtilsV2.dll
+ModLoad: 73280000 732a2000   C:\WINDOWS\SysWOW64\SensorsUtilsV2.dll
+ModLoad: 732c0000 732e7000   C:\Windows\SysWOW64\PortableDeviceTypes.dll
+ModLoad: 732c0000 732e7000   C:\Windows\SysWOW64\PortableDeviceTypes.dll
+ModLoad: 73470000 734a0000   C:\Windows\SysWOW64\deviceaccess.dll
+ModLoad: 73470000 734a0000   C:\Windows\SysWOW64\deviceaccess.dll
+direct3d11 vout display debug: inclinometer not found. (hr=0x80070490)
+direct3d11 vout display debug: created video sub-window
+direct3d11 vout display debug: Vout EventThread running
+ModLoad: 73280000 7328f000   C:\WINDOWS\SysWOW64\resourcepolicyclient.dll
+ModLoad: 73280000 7328f000   C:\WINDOWS\SysWOW64\resourcepolicyclient.dll
+ModLoad: 73a50000 73bb7000   C:\WINDOWS\System32\DriverStore\FileRepository\u0374770.inf_amd64_0317a267805119f2\B373217\aticfx32.dll
+ModLoad: 73a50000 73bb7000   C:\WINDOWS\System32\DriverStore\FileRepository\u0374770.inf_amd64_0317a267805119f2\B373217\aticfx32.dll
+ModLoad: 75630000 75638000   C:\WINDOWS\SysWOW64\VERSION.dll
+ModLoad: 73280000 732a6000   C:\WINDOWS\SysWOW64\dwmapi.dll
+ModLoad: 73280000 732a6000   C:\WINDOWS\SysWOW64\dwmapi.dll
+ModLoad: 73280000 732ae000   C:\WINDOWS\System32\DriverStore\FileRepository\u0374770.inf_amd64_0317a267805119f2\B373217\atiuxpag.dll
+ModLoad: 73280000 732ae000   C:\WINDOWS\System32\DriverStore\FileRepository\u0374770.inf_amd64_0317a267805119f2\B373217\atiuxpag.dll
+ModLoad: 77d70000 79799000   C:\WINDOWS\System32\DriverStore\FileRepository\u0374770.inf_amd64_0317a267805119f2\B373217\atidxx32.dll
+ModLoad: 77d70000 79799000   C:\WINDOWS\System32\DriverStore\FileRepository\u0374770.inf_amd64_0317a267805119f2\B373217\atidxx32.dll
+ModLoad: 75e40000 76279000   C:\WINDOWS\SysWOW64\SETUPAPI.dll
+ModLoad: 73bc0000 73be7000   C:\WINDOWS\SysWOW64\amdihk32.dll
+ModLoad: 73bc0000 73be7000   C:\WINDOWS\SysWOW64\amdihk32.dll
+ModLoad: 73ea0000 73ecc000   C:\WINDOWS\SysWOW64\dxcore.dll
+ModLoad: 73ea0000 73ecc000   C:\WINDOWS\SysWOW64\dxcore.dll
+ModLoad: 74280000 742a0000   C:\WINDOWS\SysWOW64\D3DSCache.dll
+ModLoad: 74280000 742a0000   C:\WINDOWS\SysWOW64\D3DSCache.dll
+ModLoad: 75940000 75965000   C:\WINDOWS\SysWOW64\USERENV.dll
+wasapi generic debug: buffer size    : 96000 frames
+direct3d11 vout display debug: Created the D3D11 device type 1 level b100.
+direct3d11 vout display debug: ATI WDDM driver 30.0.13024.4001
+wasapi generic debug: maximum latency: 000 ns
+wasapi generic debug: default period : 10666700 ns
+wasapi generic debug: minimum period : 3000000 ns
+main generic debug: using aout stream module "wasapi"
+main audio output debug: output 'f32l' 48000 Hz Stereo frame=1 samples/8 bytes
+main volume debug: looking for audio volume module matching "any": 2 candidates
+ModLoad: 74d20000 74d2e000   C:\Program Files (x86)\VideoLAN\VLC\plugins\audio_mixer\libfloat_mixer_plugin.dll
+ModLoad: 74d20000 74d2e000   C:\Program Files (x86)\VideoLAN\VLC\plugins\audio_mixer\libfloat_mixer_plugin.dll
+main volume debug: using audio volume module "float_mixer"
+main audio output debug: input 'f32l' 44100 Hz Stereo frame=1 samples/8 bytes
+main audio filter debug: looking for audio filter module matching "scaletempo": 16 candidates
+ModLoad: 74d30000 74d3f000   C:\Program Files (x86)\VideoLAN\VLC\plugins\audio_filter\libscaletempo_plugin.dll
+ModLoad: 74d30000 74d3f000   C:\Program Files (x86)\VideoLAN\VLC\plugins\audio_filter\libscaletempo_plugin.dll
+scaletempo audio filter debug: format: 44100 rate, 2 nch, 4 bps, fl32
+scaletempo audio filter debug: params: 30 stride, 0.200 overlap, 14 search
+scaletempo audio filter debug: 1.000 scale, 1323.000 stride_in, 1323 stride_out, 1059 standing, 264 overlap, 617 search, 2204 queue, fl32 mode
+main audio filter debug: using audio filter module "scaletempo"
+main audio output debug: conversion: 'f32l'->'f32l' 44100 Hz->44100 Hz Stereo->Stereo
+main audio output debug: conversion pipeline complete
+main audio output debug: conversion: 'f32l'->'f32l' 44100 Hz->44100 Hz Stereo->Stereo
+main audio output debug: conversion pipeline complete
+main audio resampler debug: looking for audio resampler module matching "any": 3 candidates
+ModLoad: 75770000 758e7000   C:\Program Files (x86)\VideoLAN\VLC\plugins\audio_filter\libsamplerate_plugin.dll
+ModLoad: 75770000 758e7000   C:\Program Files (x86)\VideoLAN\VLC\plugins\audio_filter\libsamplerate_plugin.dll
+main audio resampler debug: using audio resampler module "samplerate"
+ModLoad: 758f0000 75916000   C:\WINDOWS\SysWOW64\dwmapi.dll
+ModLoad: 758f0000 75916000   C:\WINDOWS\SysWOW64\dwmapi.dll
+direct3d11 vout display debug: supports colorspace RGB Rec.709 gamma:22 range:FULL
+direct3d11 vout display debug: supports colorspace RGB Rec.709 gamma:22 range:STUDIO
+direct3d11 vout display debug: supports colorspace RGB Rec.2020 gamma:22 range:STUDIO
+direct3d11 vout display debug: supports colorspace RGB Rec.2020 gamma:22 range:FULL
+direct3d11 vout display debug: supports colorspace RGB Rec.2020 gamma:2084 range:FULL
+direct3d11 vout display debug: supports colorspace RGB Rec.2020 gamma:2084 range:STUDIO
+direct3d11 vout display debug: Output max luminance: 270.0, colorspace RGB Rec.709 gamma:22 range:FULL, bits per pixel 6
+direct3d11 vout display debug: using colorspace RGB Rec.709 gamma:22 range:FULL
+direct3d11 vout display debug: Using pixel format VA_NV12 for chroma DX11
+main vout display debug: VoutDisplayEvent 'resize' 1296x759
+ModLoad: 7d9a0000 7dd59000   C:\Windows\SysWOW64\OneCoreUAPCommonProxyStub.dll
+ModLoad: 7d9a0000 7dd59000   C:\Windows\SysWOW64\OneCoreUAPCommonProxyStub.dll
+direct3d11 vout display debug: using GPU render fence
+direct3d11 vout display debug: Direct3D11 resources created
+direct3d11 vout display debug: Direct3D11 device adapter successfully initialized
+direct3d11 vout display debug: Direct3D11 Open Succeeded
+main vout display debug: using vout display module "direct3d11"
+ModLoad: 7df60000 7ecf6000   C:\WINDOWS\System32\DriverStore\FileRepository\u0374770.inf_amd64_0317a267805119f2\B373217\atiumdva.dll
+ModLoad: 7df60000 7ecf6000   C:\WINDOWS\System32\DriverStore\FileRepository\u0374770.inf_amd64_0317a267805119f2\B373217\atiumdva.dll
+(28c8.2644): C++ EH exception - code e06d7363 (first chance)
+(28c8.2644): C++ EH exception - code e06d7363 (first chance)
+(28c8.2644): C++ EH exception - code e06d7363 (first chance)
+direct3d11 vout display error: CreateTexture2D failed for the 38 pool. (hr=0x8007000e)
+main video output warning: Not enough direct buffers, using system memory
+main video output debug: original format sz 1280x720, of (0,0), vsz 1280x720, 4cc DX11, sar 1:1, msk r0x0 g0x0 b0x0
+main spu text debug: removing module "freetype"
+main vout display debug: VoutDisplayEvent 'resize' 1366x632
+direct3d11 vout display debug: Detected size change 1123x632
+main spu text debug: looking for text renderer module matching "any": 3 candidates
+ModLoad: 6ea10000 6ec1c000   C:\WINDOWS\SysWOW64\Dwrite.dll
+ModLoad: 6ea10000 6ec1c000   C:\WINDOWS\SysWOW64\Dwrite.dll
+freetype spu text debug: Using DWrite backend
+freetype spu text debug: DWrite_GetFamily(): family name: Arial
+freetype spu text debug: DWrite_ParseFamily(): using font at index 0 with weight 400 for bold: 0, italic: 0
+freetype spu text debug: DWrite_ParseFamily(): using font at index 1 with weight 700 for bold: 1, italic: 0
+freetype spu text debug: DWrite_ParseFamily(): using font at index 2 with weight 400 for bold: 0, italic: 1
+freetype spu text debug: DWrite_ParseFamily(): using font at index 3 with weight 700 for bold: 1, italic: 1
+main spu text debug: using text renderer module "freetype"
+main generic debug: looking for hw decoder module matching "any": 2 candidates
+ModLoad: 6d240000 6d289000   C:\Program Files (x86)\VideoLAN\VLC\plugins\codec\libd3d11va_plugin.dll
+ModLoad: 6d240000 6d289000   C:\Program Files (x86)\VideoLAN\VLC\plugins\codec\libd3d11va_plugin.dll
+d3d11va generic debug: Created the D3D11 device type 1 level b100.
+d3d11va generic debug: ATI WDDM driver 30.0.13024.4001
+d3d11va generic debug: CreateDevice succeed
+d3d11va generic debug: - 'MPEG-2 variable-length decoder' is supported
+d3d11va generic debug: - 'MPEG-2 inverse discrete cosine transform' is supported
+d3d11va generic debug: - 'H.264 variable-length decoder, no film grain technology' is supported
+d3d11va generic debug: - 'H.264 variable-length decoder, no film grain technology, Flash' is supported
+d3d11va generic debug: - 'Unknown decoder 0x6719b6fb-0x5cad-0x4acb-0xb00af3bfdec38727' is supported
+d3d11va generic debug: - 'Unknown decoder 0x9901ccd3-0xca12-0x4b7e-0x867ae2223d9255c3' is supported
+d3d11va generic debug: - 'HEVC Main profile' is supported
+d3d11va generic debug: - 'Unknown decoder 0xea72396a-0x67ec-0x4781-0xbede56f498f04ef2' is supported
+d3d11va generic debug: - 'Unknown decoder 0xc152ca8f-0x738c-0x461b-0xad89fc292cf8f162' is supported
+d3d11va generic debug: - 'Unknown decoder 0x514a356c-0x7027-0x4aff-0x8a60afd2c1f672f1' is supported
+d3d11va generic debug: - 'H.264 stereo high profile, mbs flag set' is supported
+d3d11va generic debug: - 'H.264 stereo high profile' is supported
+d3d11va generic debug: - 'VC-1 variable-length decoder' is supported
+d3d11va generic debug: - 'Unknown decoder 0xca15d19a-0x2b48-0x43d6-0x979e7a6e9c802ff8' is supported
+d3d11va generic debug: - 'MPEG-4 Part 2 variable-length decoder, Simple&Advanced Profile, Avivo' is supported
+d3d11va generic debug: - 'MPEG-4 Part 2 variable-length decoder, Simple&Advanced Profile, no GMC' is supported
+d3d11va generic debug: - 'Unknown decoder 0xd1c20509-0xae7b-0x4e72-0xae3b49f88d58992f' is supported
+d3d11va generic debug: - 'Unknown decoder 0x84ad67f6-0x4c21-0x419a-0x9f0b24f0578906c1' is supported
+d3d11va generic debug: - 'Unknown decoder 0x725ad240-0x786c-0x471e-0xad3c38f739936517' is supported
+d3d11va generic debug: - 'Unknown decoder 0x95664ff5-0x9e03-0x4c74-0xbb4f9178d6035e58' is supported
+d3d11va generic debug: - 'Unknown decoder 0x5ef7d40d-0x5b96-0x49e7-0xb41923342094a4cf' is supported
+d3d11va generic debug: - 'HEVC Main 10 profile' is supported
+d3d11va generic debug: - 'Unknown decoder 0x65d1fa41-0x58af-0x453a-0x9cab5d981156da9f' is supported
+d3d11va generic debug: - 'Unknown decoder 0x2db154b6-0xdbb2-0x4079-0xa3ff60d7a898a6ab' is supported
+d3d11va generic debug: - 'Unknown decoder 0xc74a3fd0-0xd713-0x4581-0xa02e8edfb112ace3' is supported
+d3d11va generic debug: - 'VP9 profile 0' is supported
+d3d11va generic debug: - 'VP9 profile 2' is supported
+d3d11va generic debug: - 'Unknown decoder 0x603a4756-0xa864-0x4f91-0xbb622c935b7a1391' is supported
+d3d11va generic debug: - 'Unknown decoder 0xc58b9a06-0x7e89-0x11e1-0xbb0070b34824019b' is supported
+d3d11va generic debug: Trying to use 'H.264 variable-length decoder, no film grain technology' as input
+d3d11va generic debug: NV12 output is supported for decoder H.264 variable-length decoder, no film grain technology.
+d3d11va generic debug: Using output format NV12 for decoder H.264 variable-length decoder, no film grain technology
+d3d11va generic debug: va_pool_SetupDecoder id 27 1280x720 count: 23
+d3d11va generic debug: ID3D11VideoDecoderOutputView succeed with 23 surfaces (1280x720)
+d3d11va generic debug: we got 3 decoder configurations
+d3d11va generic debug: configuration[0] ConfigBitstreamRaw 2
+d3d11va generic debug: configuration[1] ConfigBitstreamRaw 2
+d3d11va generic debug: configuration[2] ConfigBitstreamRaw 2
+d3d11va generic debug: DxCreateDecoderSurfaces succeed
+main generic debug: using hw decoder module "d3d11va"
+avcodec decoder: Using D3D11VA (AMD Radeon(TM) Vega 3 Graphics, vendor 1002(ATI), device 15d8, revision c4) for hardware decoding
+(28c8.29c4): Access violation - code c0000005 (first chance)
+First chance exceptions are reported before any exception handling.
+This exception may be expected and handled.
+eax=6cc0ec1c ebx=00000000 ecx=00000000 edx=00000000 esi=6cc0ece0 edi=7ed872cc
+eip=6b6f82fe esp=6cc0ebe0 ebp=6cc0ecb0 iopl=0         nv up ei pl zr na pe nc
+cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00010246
+d3d11!NDXGI::CDevice::WaitForSynchronizationObjectCB+0x2e:
+6b6f82fe 8b4304          mov     eax,dword ptr [ebx+4] ds:002b:00000004=????????
+0:022> g
+(28c8.29c4): Access violation - code c0000005 (!!! second chance !!!)
+eax=6cc0ec1c ebx=00000000 ecx=00000000 edx=00000000 esi=6cc0ece0 edi=7ed872cc
+eip=6b6f82fe esp=6cc0ebe0 ebp=6cc0ecb0 iopl=0         nv up ei pl zr na pe nc
+cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00010246
+d3d11!NDXGI::CDevice::WaitForSynchronizationObjectCB+0x2e:
+6b6f82fe 8b4304          mov     eax,dword ptr [ebx+4] ds:002b:00000004=????????
+0:022> dc 0x6cc0ec1c
+6cc0ec1c  00000000 00000000 00000000 00000000  ................
+6cc0ec2c  00000000 00000000 00000000 00000000  ................
+6cc0ec3c  00000000 00000000 00000000 00000000  ................
+6cc0ec4c  00000000 00000000 00000000 00000000  ................
+6cc0ec5c  00000000 00000000 00000000 00000000  ................
+6cc0ec6c  00000000 00000000 00000000 00000000  ................
+6cc0ec7c  00000000 00000000 00000000 00000000  ................
+6cc0ec8c  00000000 00000000 00000000 00000000  ................
+0:022> !analyze -v
+*******************************************************************************
+*                                                                             *
+*                        Exception Analysis                                   *
+*                                                                             *
+*******************************************************************************
+
+
+KEY_VALUES_STRING: 1
+
+    Key  : AV.Dereference
+    Value: NullClassPtr
+
+    Key  : AV.Fault
+    Value: Read
+
+    Key  : Analysis.CPU.mSec
+    Value: 3421
+
+    Key  : Analysis.DebugAnalysisManager
+    Value: Create
+
+    Key  : Analysis.Elapsed.mSec
+    Value: 90735
+
+    Key  : Analysis.Init.CPU.mSec
+    Value: 4171
+
+    Key  : Analysis.Init.Elapsed.mSec
+    Value: 6860029
+
+    Key  : Analysis.Memory.CommitPeak.Mb
+    Value: 95
+
+    Key  : Timeline.OS.Boot.DeltaSec
+    Value: 46753
+
+    Key  : Timeline.Process.Start.DeltaSec
+    Value: 6859
+
+    Key  : WER.OS.Branch
+    Value: vb_release
+
+    Key  : WER.OS.Timestamp
+    Value: 2019-12-06T14:06:00Z
+
+    Key  : WER.OS.Version
+    Value: 10.0.19041.1
+
+    Key  : WER.Process.Version
+    Value: 3.0.17.4
+
+
+NTGLOBALFLAG:  2000000
+
+PROCESS_BAM_CURRENT_THROTTLED: 0
+
+PROCESS_BAM_PREVIOUS_THROTTLED: 0
+
+APPLICATION_VERIFIER_FLAGS:  0
+
+APPLICATION_VERIFIER_LOADED: 1
+
+EXCEPTION_RECORD:  (.exr -1)
+ExceptionAddress: 6b6f82fe (d3d11!NDXGI::CDevice::WaitForSynchronizationObjectCB+0x0000002e)
+   ExceptionCode: c0000005 (Access violation)
+  ExceptionFlags: 00000000
+NumberParameters: 2
+   Parameter[0]: 00000000
+   Parameter[1]: 00000004
+Attempt to read from address 00000004
+
+FAULTING_THREAD:  000029c4
+
+PROCESS_NAME:  vlc.exe
+
+READ_ADDRESS:  00000004 
+
+ERROR_CODE: (NTSTATUS) 0xc0000005 - The instruction at 0x%p referenced memory at 0x%p. The memory could not be %s.
+
+EXCEPTION_CODE_STR:  c0000005
+
+EXCEPTION_PARAMETER1:  00000000
+
+EXCEPTION_PARAMETER2:  00000004
+
+STACK_TEXT:  
+6cc0ecb0 73291f8b     7ed872cc 6cc0ece0 6cc0ed7c d3d11!NDXGI::CDevice::WaitForSynchronizationObjectCB+0x2e
+WARNING: Stack unwind information not available. Following frames may be wrong.
+6cc0ecc0 77df3321     7ed906e0 6cc0ece0 00000000 atiuxpag!OpenAdapter10_2+0x9123
+6cc0ed7c 77e0c180     6cc0eda8 00000001 00000001 atidxx32!AmdDxGsaFreeCompiledShader+0x7931
+6cc0ee40 7e03257a     7f6104c0 6cc0ee60 00000000 atidxx32!AmdDxGsaFreeCompiledShader+0x20790
+6cc0ee80 7e040701     098e8a40 00000012 6cc0eeb0 atiumdva!MmdDxxCreateDevice+0x403a
+6cc0f7dc 7e03eb91     098e8a40 75550040 7f6104c0 atiumdva!MmdDxxCreateDevice+0x121c1
+6cc0f818 77de81f9     098e8a40 7f62ad90 755503c0 atiumdva!MmdDxxCreateDevice+0x10651
+6cc0f82c 7856b64f     7f62acc0 7ee846d4 7328ba68 atidxx32!XdxQueryTlsLookupTable+0x5de19
+6cc0f840 77dc5188     7f62acc0 6cc0f85c 7328ba7f atidxx32!AmdDxGsaFreeCompiledShader+0x77fc5f
+6cc0f84c 7328ba7f     7ed924f0 7ee847c4 6cc0f888 atidxx32!XdxQueryTlsLookupTable+0x3ada8
+6cc0f85c 6b73656b     7ed906e0 7ee847c4 192b4bd8 atiuxpag!OpenAdapter10_2+0x2c17
+6cc0f888 6b71db31     7ee846d4 7ee846d4 00000000 d3d11!CDecodeContext::EndFrame+0x4b
+6cc0f8a8 700e9b8e     7ed89c38 7ee846d4 70570169 d3d11!CContext::DecoderEndFrame+0x61
+6cc0f8f4 77c32f8c     77a8c753 00000002 6cc0fb18 libavcodec_plugin!vlc_entry_license__3_0_0f+0xafe90e
+6cc0f8f8 77a8c753     00000002 6cc0fb18 00000001 ntdll!NtWaitForMultipleObjects+0xc
+6cc0f9e0 00000000     00000000 000000e0 00000000 KERNELBASE!WaitForMultipleObjectsEx+0x103
+
+
+SYMBOL_NAME:  d3d11!NDXGI::CDevice::WaitForSynchronizationObjectCB+2e
+
+MODULE_NAME: d3d11
+
+IMAGE_NAME:  d3d11.dll
+
+STACK_COMMAND:  ~22s ; .cxr ; kb
+
+FAILURE_BUCKET_ID:  NULL_CLASS_PTR_READ_AVRF_c0000005_d3d11.dll!NDXGI::CDevice::WaitForSynchronizationObjectCB
+
+OS_VERSION:  10.0.19041.1
+
+BUILDLAB_STR:  vb_release
+
+OSPLATFORM_TYPE:  x86
+
+OSNAME:  Windows 10
+
+IMAGE_VERSION:  10.0.19041.1741
+
+FAILURE_ID_HASH:  {2bcdb075-34bb-04b8-b17b-129eb1786a63}
+
+Followup:     MachineOwner
+---------
+

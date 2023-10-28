@@ -1,0 +1,757 @@
+ModLoad: 752e0000 752e8000   C:\WINDOWS\SysWOW64\VERSION.dll
+ModLoad: 6d620000 6d64e000   C:\WINDOWS\System32\DriverStore\FileRepository\u0374770.inf_amd64_0317a267805119f2\B373217\atiuxpag.dll
+(2f04.2458): Access violation - code c0000005 (first chance)
+First chance exceptions are reported before any exception handling.
+This exception may be expected and handled.
+eax=7f595fdc ebx=7f595fdc ecx=7f580000 edx=7f580000 esi=6d620000 edi=80004005
+eip=7f424b8d esp=7ec6f00c ebp=7ec6f028 iopl=0         nv up ei pl zr na pe nc
+cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00010246
+aticfx32!OpenAdapter10_2+0xdfed:
+7f424b8d 833800          cmp     dword ptr [eax],0    ds:002b:7f595fdc=????????
+0:031> g
+(2f04.2458): Access violation - code c0000005 (!!! second chance !!!)
+eax=7f595fdc ebx=7f595fdc ecx=7f580000 edx=7f580000 esi=6d620000 edi=80004005
+eip=7f424b8d esp=7ec6f00c ebp=7ec6f028 iopl=0         nv up ei pl zr na pe nc
+cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00010246
+aticfx32!OpenAdapter10_2+0xdfed:
+7f424b8d 833800          cmp     dword ptr [eax],0    ds:002b:7f595fdc=????????
+0:031> .load msec
+0:031> !exploitable
+
+!exploitable 1.6.0.0
+Exploitability Classification: UNKNOWN
+Recommended Bug Title: Data from Faulting Address controls Branch Selection starting at aticfx32!OpenAdapter10_2+0x000000000000dfed (Hash=0xee8d46e5.0xd8a564bf)
+
+The data from the faulting address is later used to determine whether or not a branch is taken.
+0:031> lm
+start    end        module name
+00db0000 00ea2000   vlc        (deferred)             
+19e90000 19e9f000   libcdg_plugin   (deferred)             
+19ea0000 19eae000   libspdif_plugin   (deferred)             
+19ed0000 19ef9000   libspeex_plugin   (deferred)             
+21750000 2178b000   libjpeg_plugin   (deferred)             
+21790000 2179f000   libaes3_plugin   (deferred)             
+217a0000 217b0000   liblpcm_plugin   (deferred)             
+226d0000 226e0000   libi420_yuy2_sse2_plugin   (deferred)             
+22720000 22732000   libaraw_plugin   (deferred)             
+22740000 2274f000   libi420_yuy2_mmx_plugin   (deferred)             
+24640000 24652000   libg711_plugin   (deferred)             
+29b60000 29ba0000   libflac_plugin   (deferred)             
+29ba0000 29be6000   libpng_plugin   (deferred)             
+29bf0000 29c4a000   libtheora_plugin   (deferred)             
+2c960000 2c973000   libwasapi_plugin   (deferred)             
+2c980000 2c990000   libi422_yuy2_sse2_plugin   (deferred)             
+2e490000 2e5cc000   libaom_plugin   (deferred)             
+2f330000 2f33e000   libfloat_mixer_plugin   (deferred)             
+32c70000 32c87000   USP10      (deferred)             
+32dd0000 32ddf000   libscaletempo_plugin   (deferred)             
+33a40000 33a60000   libi420_nv12_plugin   (deferred)             
+33b60000 33c1a000   libvorbis_plugin   (deferred)             
+33c20000 33c7c000   libopus_plugin   (deferred)             
+33c80000 33cec000   libmpg123_plugin   (deferred)             
+33cf0000 33d38000   libfaad_plugin   (deferred)             
+33d40000 33d58000   libi420_rgb_mmx_plugin   (deferred)             
+345e0000 34607000   libi420_rgb_sse2_plugin   (deferred)             
+34e60000 34e6f000   libi422_yuy2_mmx_plugin   (deferred)             
+34e70000 34e82000   libi420_rgb_plugin   (deferred)             
+34e90000 34e9f000   libyuy2_i422_plugin   (deferred)             
+34ea0000 34eaf000   libi422_yuy2_plugin   (deferred)             
+34eb0000 34ebf000   libgrey_yuv_plugin   (deferred)             
+35610000 3561f000   libyuy2_i420_plugin   (deferred)             
+35620000 3562f000   libi420_yuy2_plugin   (deferred)             
+35630000 3563f000   libi422_i420_plugin   (deferred)             
+35640000 3564e000   libyuvp_plugin   (deferred)             
+35750000 3577a000   cbdiskMntNtf3   (deferred)             
+35b80000 35ba7000   libdirect3d9_filters_plugin   (deferred)             
+35bb0000 35bbe000   libwinhibit_plugin   (deferred)             
+36ac0000 36af3000   libdirect3d11_filters_plugin   (deferred)             
+38b10000 38b67000   libdirect3d11_plugin   (export symbols)       C:\Program Files (x86)\VideoLAN\VLC\plugins\video_output\libdirect3d11_plugin.dll
+38b70000 38b9e000   SensorsNativeApi_V2   (deferred)             
+38ed0000 38f26000   SensorsApi   (deferred)             
+38f30000 38f52000   SensorsUtilsV2   (deferred)             
+39430000 39460000   deviceaccess   (deferred)             
+5f8f0000 5f903000   libfolder_plugin   (deferred)             
+5f910000 5f91f000   libdemux_stl_plugin   (deferred)             
+5f920000 5f93e000   libvobsub_plugin   (deferred)             
+5f940000 61138000   libavcodec_plugin   (deferred)             
+61140000 61157000   libnsc_plugin   (deferred)             
+61160000 6116e000   libdemux_cdg_plugin   (deferred)             
+61170000 6117f000   librawdv_plugin   (deferred)             
+61180000 6118e000   libmpgv_plugin   (deferred)             
+61190000 6119f000   libmjpeg_plugin   (deferred)             
+611a0000 611c6000   libh26x_plugin   (deferred)             
+611d0000 611e3000   libty_plugin   (deferred)             
+611f0000 61206000   libps_plugin   (deferred)             
+61210000 6121f000   libnsv_plugin   (deferred)             
+61220000 6122f000   libau_plugin   (deferred)             
+61230000 6123e000   libxa_plugin   (deferred)             
+61240000 61336000   libmod_plugin   (deferred)             
+61340000 6134f000   libaiff_plugin   (deferred)             
+61350000 613e5000   libts_plugin   (deferred)             
+613f0000 61401000   libimage_plugin   (deferred)             
+61410000 61466000   libgme_plugin   (deferred)             
+61470000 614a2000   libwebvtt_plugin   (deferred)             
+614b0000 616e8000   libadaptive_plugin   (deferred)             
+616f0000 618a2000   libmkv_plugin   (deferred)             
+618b0000 62930000   libqt_plugin   (deferred)             
+62950000 62960000   libpva_plugin   (deferred)             
+62960000 6296f000   librawvid_plugin   (deferred)             
+62970000 6297f000   libvoc_plugin   (deferred)             
+62980000 62993000   NetworkExplorer   (deferred)             
+629a0000 629bc000   cldapi     (deferred)             
+629c0000 629e9000   RTWorkQ    (deferred)             
+629f0000 62b69000   MFPlat     (deferred)             
+62b70000 62c65000   mfmkvsrcsnk   (deferred)             
+62c70000 62cba000   ActXPrxy   (deferred)             
+62cc0000 62ce2000   libttml_plugin   (deferred)             
+62cf0000 62d00000   libsmf_plugin   (deferred)             
+62d00000 62d91000   liblive555_plugin   (deferred)             
+62da0000 62dae000   libdiracsys_plugin   (deferred)             
+62db0000 62e06000   libogg_plugin   (deferred)             
+62e10000 62e38000   libsap_plugin   (deferred)             
+62e40000 62f72000   libsid_plugin   (deferred)             
+62f80000 62f91000   libcaf_plugin   (deferred)             
+62fa0000 62fb0000   libwav_plugin   (deferred)             
+62fb0000 62fcc000   libmpc_plugin   (deferred)             
+62fd0000 62fe0000   libnuv_plugin   (deferred)             
+62fe0000 62fef000   libtta_plugin   (deferred)             
+62ff0000 63010000   libflacsys_plugin   (deferred)             
+63010000 63024000   libes_plugin   (deferred)             
+63030000 63052000   libasf_plugin   (deferred)             
+63060000 63085000   libavi_plugin   (deferred)             
+63090000 630eb000   libmp4_plugin   (deferred)             
+630f0000 63152000   provsvc    (deferred)             
+63160000 6316b000   LINKINFO   (deferred)             
+63170000 631f2000   twinapi    (deferred)             
+63200000 6323c000   Windows_UI_FileExplorer   (deferred)             
+63240000 632b7000   DUser      (deferred)             
+632c0000 6341f000   DUI70      (deferred)             
+63420000 635c9000   explorerframe   (deferred)             
+635d0000 635ea000   libhotkeys_plugin   (deferred)             
+635f0000 63634000   powrprof   (deferred)             
+63640000 63776000   AUDIOSES   (deferred)             
+64b60000 64b6f000   libwin_hotkeys_plugin   (deferred)             
+64b70000 64b84000   libmmdevice_plugin   (deferred)             
+64b90000 64c90000   libxml_plugin   (deferred)             
+64c90000 64e2e000   libtaglib_plugin   (deferred)             
+64e30000 64e3e000   libdirectory_demux_plugin   (deferred)             
+64e40000 64e4e000   librecord_plugin   (deferred)             
+64e50000 64ec9000   libarchive_plugin   (deferred)             
+64ed0000 64f30000   liblua_plugin   (deferred)             
+64f30000 64f5d000   libplaylist_plugin   (deferred)             
+64f60000 64f75000   libinflate_plugin   (deferred)             
+64f80000 64f8e000   libadf_plugin   (deferred)             
+64f90000 64fa8000   libhds_plugin   (deferred)             
+64fb0000 64fbe000   libskiptags_plugin   (deferred)             
+64fc0000 64fcf000   libcache_read_plugin   (deferred)             
+64fd0000 64fe4000   libfilesystem_plugin   (deferred)             
+64ff0000 65037000   WINSTA     (deferred)             
+65710000 6572e000   libvdr_plugin   (deferred)             
+65730000 6576d000   libdvdnav_plugin   (deferred)             
+65770000 65964000   liblibbluray_plugin   (deferred)             
+65970000 65983000   libconsole_logger_plugin   (deferred)             
+65990000 659b6000   dbgcore    (deferred)             
+65a40000 65cd4000   libvlccore   (export symbols)       C:\Program Files (x86)\VideoLAN\VLC\libvlccore.dll
+660c0000 660d4000   libfile_logger_plugin   (deferred)             
+660e0000 6610f000   libvlc     (deferred)             
+66110000 66175000   verifier   (deferred)             
+66360000 663e3000   policymanager   (deferred)             
+66440000 66467000   PortableDeviceTypes   (deferred)             
+66470000 664f3000   PortableDeviceApi   (deferred)             
+66540000 66589000   Windows_FileExplorer_Common   (deferred)             
+66590000 665fb000   MMDevApi   (deferred)             
+66600000 6661b000   DevDispItemProvider   (deferred)             
+66620000 66669000   PlayToDevice   (deferred)             
+66670000 666b3000   dlnashext   (deferred)             
+666c0000 666d1000   wkscli     (deferred)             
+666e0000 666f9000   davclnt    (deferred)             
+66790000 6679f000   libprefetch_plugin   (deferred)             
+667a0000 6683e000   Windows_Storage_Search   (deferred)             
+66840000 668c1000   StructuredQuery   (deferred)             
+668d0000 6692c000   ntshrui    (deferred)             
+66930000 66978000   thumbcache   (deferred)             
+66980000 66a03000   tiptsf     (deferred)             
+673a0000 673b8000   ntlanman   (deferred)             
+673c0000 673d5000   p9np       (deferred)             
+673e0000 67406000   dwmapi     (deferred)             
+67730000 678b8000   dbghelp    (deferred)             
+678c0000 678ce000   libmemory_keystore_plugin   (deferred)             
+67c40000 67cd3000   Windows_StateRepositoryPS   (deferred)             
+67ce0000 67d45000   msvcp110_win   (deferred)             
+68400000 6849f000   apphelp    (deferred)             
+68570000 685a1000   dataexchange   (deferred)             
+68880000 68914000   TextShaping   (deferred)             
+6ae50000 6b030000   d3d11      (export symbols)       C:\WINDOWS\system32\d3d11.dll
+6b030000 6b0ee000   MrmCoreR   (deferred)             
+6b0f0000 6b1b3000   dxgi       (deferred)             
+6b1c0000 6b368000   urlmon     (deferred)             
+6b370000 6b729000   OneCoreUAPCommonProxyStub   (deferred)             
+6b730000 6b7f2000   PROPSYS    (deferred)             
+6b800000 6b8ed000   InputHost   (deferred)             
+6b8f0000 6bb6e000   CoreUIComponents   (deferred)             
+6bb70000 6bc29000   TextInputFramework   (deferred)             
+6bc30000 6bd23000   Windows_UI   (deferred)             
+6cec0000 6ceca000   DAVHLPR    (deferred)             
+6ced0000 6cfab000   wintypes   (deferred)             
+6d010000 6d019000   drprov     (deferred)             
+6d0b0000 6d221000   WindowsCodecs   (deferred)             
+6d340000 6d35b000   edputil    (deferred)             
+6d360000 6d4ef000   twinapi_appcore   (deferred)             
+6d500000 6d50e000   cscapi     (deferred)             
+6d620000 6d64e000   atiuxpag   (deferred)             
+6d670000 6d6e3000   WindowManagementAPI   (deferred)             
+6d7c0000 6d9d0000   comctl32   (deferred)             
+6da10000 6da1d000   UMPDC      (deferred)             
+6db20000 6db42000   bcp47mrm   (deferred)             
+6dbd0000 6ddfd000   iertutil   (deferred)             
+6de50000 6de58000   FLTLIB     (deferred)             
+6dec0000 6dece000   MSASN1     (deferred)             
+6df30000 6df4d000   srvcli     (deferred)             
+6dfa0000 6dfab000   netutils   (deferred)             
+6dfb0000 6dfbc000   windows_staterepositorycore   (deferred)             
+6dfc0000 6e125000   dcomp      (deferred)             
+6e180000 6e21b000   CoreMessaging   (deferred)             
+6e300000 6e308000   IconCodecService   (deferred)             
+6e310000 6e31d000   atlthunk   (deferred)             
+6eee0000 6eeea000   CRYPTBASE   (deferred)             
+6eef0000 6ef1f000   rsaenh     (deferred)             
+6ef20000 6ef33000   CRYPTSP    (deferred)             
+70d00000 70d21000   SspiCli    (deferred)             
+71860000 71889000   ntmarta    (deferred)             
+71890000 718a8000   profapi    (deferred)             
+72cc0000 72ce7000   Wldp       (deferred)             
+72cf0000 732fc000   windows_storage   (deferred)             
+73350000 73374000   DEVOBJ     (deferred)             
+73490000 734a9000   MPR        (deferred)             
+734b0000 73904000   WININET    (deferred)             
+73ea0000 73ec8000   winmm      (deferred)             
+73f70000 740d7000   gdiplus    (deferred)             
+740e0000 74133000   OLEACC     (deferred)             
+74140000 7414f000   WTSAPI32   (deferred)             
+74190000 74204000   uxtheme    (deferred)             
+752e0000 752e8000   VERSION    (deferred)             
+752f0000 752ff000   kernel_appcore   (deferred)             
+75400000 7559c000   USER32     (deferred)             
+755a0000 755db000   cfgmgr32   (deferred)             
+755e0000 75625000   shlwapi    (deferred)             
+75630000 75704000   MSCTF      (deferred)             
+75710000 75cc6000   SHELL32    (deferred)             
+75cd0000 75db3000   ole32      (deferred)             
+75dd0000 75e46000   sechost    (deferred)             
+75e60000 75ee7000   shcore     (deferred)             
+75ef0000 75f9f000   comdlg32   (deferred)             
+75fa0000 75fff000   bcryptPrimitives   (deferred)             
+760b0000 760d3000   GDI32      (deferred)             
+760e0000 7612c000   WINTRUST   (deferred)             
+76130000 76148000   win32u     (deferred)             
+76150000 76369000   KERNELBASE   (export symbols)       C:\WINDOWS\System32\KERNELBASE.dll
+76370000 76406000   OLEAUT32   (deferred)             
+76410000 764cf000   msvcrt     (export symbols)       C:\WINDOWS\System32\msvcrt.dll
+764d0000 764f5000   IMM32      (deferred)             
+76500000 765fa000   CRYPT32    (deferred)             
+76600000 76663000   WS2_32     (deferred)             
+766d0000 7674b000   msvcp_win   (deferred)             
+76750000 76870000   ucrtbase   (deferred)             
+76870000 768eb000   ADVAPI32   (deferred)             
+768f0000 769cc000   gdi32full   (deferred)             
+769d0000 76e09000   SETUPAPI   (deferred)             
+76e10000 7708f000   combase    (deferred)             
+77200000 7725e000   coml2      (deferred)             
+77260000 772de000   clbcatq    (deferred)             
+772e0000 773d0000   KERNEL32   (deferred)             
+77430000 774ee000   RPCRT4     (deferred)             
+774f0000 77509000   bcrypt     (deferred)             
+77520000 776c4000   ntdll      (export symbols)       C:\WINDOWS\SYSTEM32\ntdll.dll
+7bbd0000 7bd10000   libdav1d_plugin   (deferred)             
+7bd10000 7be41000   libschroedinger_plugin   (deferred)             
+7d050000 7d2df000   libfreetype_plugin   (deferred)             
+7d2e0000 7d4ec000   Dwrite     (deferred)             
+7e5f0000 7e6e2000   libswscale_plugin   (deferred)             
+7e6f0000 7e867000   libsamplerate_plugin   (deferred)             
+7ec70000 7f004000   D3DCOMPILER_47   (deferred)             
+7f410000 7f577000   aticfx32   (export symbols)       C:\WINDOWS\System32\DriverStore\FileRepository\u0374770.inf_amd64_0317a267805119f2\B373217\aticfx32.dll
+
+Unloaded modules:
+685b0000 68669000   AppxDeploymentClient.dll
+685b0000 68669000   AppxDeploymentClient.dll
+6d080000 6d0ab000   xmllite.dll
+63020000 63060000   audiodev.dll
+62e10000 6301d000   WMVCore.DLL
+62dd0000 62e0d000   WMASF.DLL
+62cc0000 62dc6000   mfperfhelper.dll
+63060000 630eb000   wpdshext.dll
+36b40000 36b4f000   resourcepolicyclient.dll
+0:031> lmDvmaticfx32
+Browse full module list
+start    end        module name
+7f410000 7f577000   aticfx32   (export symbols)       C:\WINDOWS\System32\DriverStore\FileRepository\u0374770.inf_amd64_0317a267805119f2\B373217\aticfx32.dll
+    Loaded symbol image file: C:\WINDOWS\System32\DriverStore\FileRepository\u0374770.inf_amd64_0317a267805119f2\B373217\aticfx32.dll
+    Image path: C:\WINDOWS\System32\DriverStore\FileRepository\u0374770.inf_amd64_0317a267805119f2\B373217\aticfx32.dll
+    Image name: aticfx32.dll
+    Browse all global symbols  functions  data
+    Timestamp:        Wed Nov  3 08:18:27 2021 (61821BA3)
+    CheckSum:         00173631
+    ImageSize:        00167000
+    File version:     30.0.13024.4001
+    Product version:  8.17.10.1697
+    File flags:       0 (Mask 0)
+    File OS:          40004 NT Win32
+    File type:        2.0 Dll
+    File date:        00000000.00000000
+    Translations:     0409.04e4
+    Information from resource tables:
+        CompanyName:      Advanced Micro Devices, Inc. 
+        ProductName:      AMD Inc. Radeon DirectX 11 Driver
+        InternalName:     aticfx32.dll
+        OriginalFilename: aticfx32.dll
+        ProductVersion:   8.17.10.1697
+        FileVersion:      8.17.10.1697
+        PrivateBuild:     Built by foreman on PS-WBM-604 on 11/03/21 at 01:18
+        SpecialBuild:     DevStudio Build
+        FileDescription:  aticfx32.dll
+        LegalCopyright:   Copyright (C) 1998-2012 AMD Inc.
+        LegalTrademarks:  Radeon (TM) is a Trademark of AMD Inc.
+		
+		
+----------------------------------------------------------------------------------------
+
+
+0:031> p
+(2f04.2458): Access violation - code c0000005 (first chance)
+First chance exceptions are reported before any exception handling.
+This exception may be expected and handled.
+eax=7f595fdc ebx=7f595fdc ecx=7f580000 edx=7f580000 esi=6d620000 edi=80004005
+eip=7f424b8d esp=7ec6f00c ebp=7ec6f028 iopl=0         nv up ei pl zr na pe nc
+cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00010246
+aticfx32!OpenAdapter10_2+0xdfed:
+7f424b8d 833800          cmp     dword ptr [eax],0    ds:002b:7f595fdc=????????
+0:031> p
+(2f04.2458): Access violation - code c0000005 (!!! second chance !!!)
+eax=7f595fdc ebx=7f595fdc ecx=7f580000 edx=7f580000 esi=6d620000 edi=80004005
+eip=7f424b8d esp=7ec6f00c ebp=7ec6f028 iopl=0         nv up ei pl zr na pe nc
+cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00010246
+aticfx32!OpenAdapter10_2+0xdfed:
+7f424b8d 833800          cmp     dword ptr [eax],0    ds:002b:7f595fdc=????????
+0:031> !heap -p -a 7f595fdc
+
+    address 7f595fdc found in
+    _DPH_HEAP_ROOT @ 7f581000
+    in free-ed allocation (  DPH_HEAP_BLOCK:         VirtAddr         VirtSize)
+                                   7f581e38:         7f595000             2000
+    6611ab02 verifier!VerifierDisableFaultInjectionExclusionRange+0x000036a2
+    775ffd06 ntdll!RtlRegisterSecureMemoryCacheCallback+0x00001266
+    77563d56 ntdll!RtlGetCurrentServiceSessionId+0x000000f6
+    775a7a5d ntdll!RtlGetNtGlobalFlags+0x0000078d
+    77563c26 ntdll!RtlFreeHeap+0x00000046
+    7f424b8a aticfx32!OpenAdapter10_2+0x0000dfea
+    7f424600 aticfx32!OpenAdapter10_2+0x0000da60
+    7f416bb0 aticfx32!OpenAdapter10_2+0x00000010
+    6aea2d8b d3d11!D3D11CoreCreateDevice+0x00002ceb
+    6aea185f d3d11!D3D11CoreCreateDevice+0x000017bf
+    6aea105b d3d11!D3D11CoreCreateDevice+0x00000fbb
+    6aea0574 d3d11!D3D11CoreCreateDevice+0x000004d4
+    6aea3ee0 d3d11!EnableFeatureLevelUpgrade+0x00000a70
+    6aea4441 d3d11!D3D11CreateDeviceAndSwapChain+0x000000c1
+    38b301ca libdirect3d11_plugin!vlc_entry_license__3_0_0f+0x000190ba
+	
+------------------------------------------------------------------------------------------------
+
+0:003> bm /a aticfx32!* ".echo callstack"
+  1: 7a3022c0          @!"aticfx32!AmdExtRequestMgpuAppControl"
+  2: 7a3023a0          @!"aticfx32!DllMain"
+  3: 7a3023d0          @!"aticfx32!AmdGetCfxModuleHandle"
+  4: 7a306b70          @!"aticfx32!OpenAdapter10"
+  5: 7a306ba0          @!"aticfx32!OpenAdapter10_2"
+  6: 7a35ddc0          @!"aticfx32!OpenAdapter"
+  7: 7a387ca0          @!"aticfx32!AmdQueryPowerXpressDeviceInfoEx"
+  8: 7a387dd0          @!"aticfx32!AmdQueryPowerXpressDeviceInfo"
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+ModLoad: 75720000 75740000   C:\WINDOWS\SysWOW64\D3DSCache.dll
+main audio output debug: conversion: 'f32l'->'f32l' 44100 Hz->44100 Hz Stereo->Stereo
+main audio output debug: conversion pipeline complete
+main audio resampler debug: looking for audio resampler module matching "any": 3 candidates
+ModLoad: 75720000 75740000   C:\WINDOWS\SysWOW64\D3DSCache.dll
+ModLoad: 75a00000 75a25000   C:\WINDOWS\SysWOW64\USERENV.dll
+ModLoad: 75a00000 75a25000   C:\WINDOWS\SysWOW64\USERENV.dll
+ModLoad: 7ed30000 7eea7000   C:\Program Files (x86)\VideoLAN\VLC\plugins\audio_filter\libsamplerate_plugin.dll
+ModLoad: 7ed30000 7eea7000   C:\Program Files (x86)\VideoLAN\VLC\plugins\audio_filter\libsamplerate_plugin.dll
+direct3d11 vout display debug: Created the D3D11 device type 1 level b100.
+direct3d11 vout display debug: ATI WDDM driver 30.0.13024.4001
+main audio resampler debug: using audio resampler module "samplerate"
+ModLoad: 770e0000 77106000   C:\WINDOWS\SysWOW64\dwmapi.dll
+ModLoad: 770e0000 77106000   C:\WINDOWS\SysWOW64\dwmapi.dll
+direct3d11 vout display debug: supports colorspace RGB Rec.709 gamma:22 range:FULL
+direct3d11 vout display debug: supports colorspace RGB Rec.709 gamma:22 range:STUDIO
+direct3d11 vout display debug: supports colorspace RGB Rec.2020 gamma:22 range:STUDIO
+direct3d11 vout display debug: supports colorspace RGB Rec.2020 gamma:22 range:FULL
+direct3d11 vout display debug: supports colorspace RGB Rec.2020 gamma:2084 range:FULL
+direct3d11 vout display debug: supports colorspace RGB Rec.2020 gamma:2084 range:STUDIO
+direct3d11 vout display debug: Output max luminance: 270.0, colorspace RGB Rec.709 gamma:22 range:FULL, bits per pixel 6
+direct3d11 vout display debug: using colorspace RGB Rec.709 gamma:22 range:FULL
+direct3d11 vout display debug: Using pixel format VA_NV12 for chroma DX11
+main vout display debug: VoutDisplayEvent 'resize' 1296x759
+ModLoad: 7f360000 7f719000   C:\Windows\SysWOW64\OneCoreUAPCommonProxyStub.dll
+ModLoad: 7f360000 7f719000   C:\Windows\SysWOW64\OneCoreUAPCommonProxyStub.dll
+direct3d11 vout display debug: using GPU render fence
+direct3d11 vout display debug: Direct3D11 resources created
+direct3d11 vout display debug: Direct3D11 device adapter successfully initialized
+direct3d11 vout display debug: Direct3D11 Open Succeeded
+main vout display debug: using vout display module "direct3d11"
+D3D11: Removing Device.
+(908.714): C++ EH exception - code e06d7363 (first chance)
+(908.714): C++ EH exception - code e06d7363 (first chance)
+(908.714): C++ EH exception - code e06d7363 (first chance)
+direct3d11 vout display error: CreateTexture2D failed for the 38 pool. (hr=0x887a0005)
+main video output warning: Not enough direct buffers, using system memory
+main video output debug: original format sz 1280x720, of (0,0), vsz 1280x720, 4cc DX11, sar 1:1, msk r0x0 g0x0 b0x0
+main spu text debug: removing module "freetype"
+main vout display debug: VoutDisplayEvent 'resize' 1366x632
+main spu text debug: looking for text renderer module matching "any": 3 candidates
+direct3d11 vout display debug: Detected size change 1123x632
+ModLoad: 713a0000 715ac000   C:\WINDOWS\SysWOW64\Dwrite.dll
+ModLoad: 713a0000 715ac000   C:\WINDOWS\SysWOW64\Dwrite.dll
+(908.714): C++ EH exception - code e06d7363 (first chance)
+(908.714): C++ EH exception - code e06d7363 (first chance)
+(908.714): C++ EH exception - code e06d7363 (first chance)
+(908.714): C++ EH exception - code e06d7363 (first chance)
+(908.714): C++ EH exception - code e06d7363 (first chance)
+freetype spu text debug: Using DWrite backend
+freetype spu text debug: DWrite_GetFamily(): family name: Arial
+direct3d11 vout display error: Failed to resize the backbuffer. (hr=0x887A0005)
+freetype spu text debug: DWrite_ParseFamily(): using font at index 0 with weight 400 for bold: 0, italic: 0
+freetype spu text debug: DWrite_ParseFamily(): using font at index 1 with weight 700 for bold: 1, italic: 0
+freetype spu text debug: DWrite_ParseFamily(): using font at index 2 with weight 400 for bold: 0, italic: 1
+freetype spu text debug: DWrite_ParseFamily(): using font at index 3 with weight 700 for bold: 1, italic: 1
+main spu text debug: using text renderer module "freetype"
+main generic debug: looking for hw decoder module matching "any": 2 candidates
+ModLoad: 775d0000 77619000   C:\Program Files (x86)\VideoLAN\VLC\plugins\codec\libd3d11va_plugin.dll
+ModLoad: 775d0000 77619000   C:\Program Files (x86)\VideoLAN\VLC\plugins\codec\libd3d11va_plugin.dll
+d3d11va generic debug: Created the D3D11 device type 1 level b100.
+d3d11va generic debug: ATI WDDM driver 30.0.13024.4001
+d3d11va generic debug: CreateDevice succeed
+(908.7d4): C++ EH exception - code e06d7363 (first chance)
+d3d11va generic error: Could not Query ID3D11VideoDevice Interface. (hr=0x80004002)
+d3d11va generic error: CreateVideoService failed
+ModLoad: 77810000 7784f000   C:\Program Files (x86)\VideoLAN\VLC\plugins\codec\libdxva2_plugin.dll
+ModLoad: 77810000 7784f000   C:\Program Files (x86)\VideoLAN\VLC\plugins\codec\libdxva2_plugin.dll
+main generic debug: no hw decoder modules matched
+avcodec decoder debug: trying format dxva2_vld
+main vout display debug: removing module "direct3d11"
+direct3d11 vout display debug: Direct3D11 resources destroyed
+direct3d11 vout display debug: Direct3D11 device adapter closed
+(908.714): Unknown exception - code 000006f4 (first chance)
+direct3d11 vout display error: SetThumbNailClip failed: 0x800706f4
+direct3d11 vout display debug: Win32 Vout EventThread terminating
+direct3d11 vout display debug: Win32VoutCloseWindow
+direct3d11 vout display debug: WinProc WM_DESTROY
+main video output debug: deinterlace -1, mode auto, is_needed 0
+main video output debug: Opening vout display wrapper
+main vout display debug: looking for vout display module matching "any": 12 candidates
+ModLoad: 73f00000 74294000   C:\WINDOWS\SysWOW64\D3DCOMPILER_47.dll
+ModLoad: 73f00000 74294000   C:\WINDOWS\SysWOW64\D3DCOMPILER_47.dll
+direct3d11 vout display debug: creating Vout EventThread
+direct3d11 vout display debug: Win32VoutCreateWindow
+main vout display debug: VoutDisplayEvent 'resize' 1366x632
+direct3d11 vout display debug: inclinometer not found. (hr=0x80070490)
+direct3d11 vout display debug: created video sub-window
+direct3d11 vout display debug: Vout EventThread running
+ModLoad: 74ec0000 75027000   C:\WINDOWS\System32\DriverStore\FileRepository\u0374770.inf_amd64_0317a267805119f2\B373217\aticfx32.dll
+ModLoad: 74e80000 74fe7000   C:\WINDOWS\System32\DriverStore\FileRepository\u0374770.inf_amd64_0317a267805119f2\B373217\aticfx32.dll
+ModLoad: 75630000 75638000   C:\WINDOWS\SysWOW64\VERSION.dll
+ModLoad: 74ff0000 7501e000   C:\WINDOWS\System32\DriverStore\FileRepository\u0374770.inf_amd64_0317a267805119f2\B373217\atiuxpag.dll
+ModLoad: 74ff0000 7501e000   C:\WINDOWS\System32\DriverStore\FileRepository\u0374770.inf_amd64_0317a267805119f2\B373217\atiuxpag.dll
+ModLoad: 78d70000 7a799000   C:\WINDOWS\System32\DriverStore\FileRepository\u0374770.inf_amd64_0317a267805119f2\B373217\atidxx32.dll
+ModLoad: 78d70000 7a799000   C:\WINDOWS\System32\DriverStore\FileRepository\u0374770.inf_amd64_0317a267805119f2\B373217\atidxx32.dll
+ModLoad: 75e40000 76279000   C:\WINDOWS\SysWOW64\SETUPAPI.dll
+ModLoad: 75020000 75047000   C:\WINDOWS\SysWOW64\amdihk32.dll
+ModLoad: 75020000 75047000   C:\WINDOWS\SysWOW64\amdihk32.dll
+direct3d11 vout display debug: Created the D3D11 device type 1 level b100.
+direct3d11 vout display debug: ATI WDDM driver 30.0.13024.4001
+direct3d11 vout display debug: supports colorspace RGB Rec.709 gamma:22 range:FULL
+direct3d11 vout display debug: supports colorspace RGB Rec.709 gamma:22 range:STUDIO
+direct3d11 vout display debug: supports colorspace RGB Rec.2020 gamma:22 range:STUDIO
+direct3d11 vout display debug: supports colorspace RGB Rec.2020 gamma:22 range:FULL
+direct3d11 vout display debug: supports colorspace RGB Rec.2020 gamma:2084 range:FULL
+direct3d11 vout display debug: supports colorspace RGB Rec.2020 gamma:2084 range:STUDIO
+direct3d11 vout display debug: Output max luminance: 270.0, colorspace RGB Rec.709 gamma:22 range:FULL, bits per pixel 6
+direct3d11 vout display debug: using colorspace RGB Rec.709 gamma:22 range:FULL
+direct3d11 vout display debug: Using pixel format YUVA for chroma DXA9
+main vout display debug: VoutDisplayEvent 'resize' 1296x759
+direct3d11 vout display debug: using GPU render fence
+direct3d11 vout display error: invalid Vertex Shader (hr=0x8007000E): out of memory during compilation
+direct3d11 vout display error: Failed to allocate resources
+direct3d11 vout display error: Direct3D11 could not be opened
+direct3d11 vout display debug: Direct3D11 resources destroyed
+direct3d11 vout display debug: Direct3D11 device adapter closed
+(908.714): Unknown exception - code 000006f4 (first chance)
+direct3d11 vout display error: SetThumbNailClip failed: 0x800706f4
+direct3d11 vout display debug: Win32 Vout EventThread terminating
+direct3d11 vout display debug: Win32VoutCloseWindow
+direct3d11 vout display debug: WinProc WM_DESTROY
+ModLoad: 73f00000 73f45000   C:\Program Files (x86)\VideoLAN\VLC\plugins\video_output\libdirect3d9_plugin.dll
+ModLoad: 73f00000 73f45000   C:\Program Files (x86)\VideoLAN\VLC\plugins\video_output\libdirect3d9_plugin.dll
+ModLoad: 73f50000 740df000   C:\WINDOWS\SysWOW64\D3D9.DLL
+ModLoad: 73f50000 740df000   C:\WINDOWS\SysWOW64\D3D9.DLL
+ModLoad: 740e0000 74247000   C:\WINDOWS\System32\DriverStore\FileRepository\u0374770.inf_amd64_0317a267805119f2\B373217\aticfx32.dll
+ModLoad: 740e0000 74247000   C:\WINDOWS\System32\DriverStore\FileRepository\u0374770.inf_amd64_0317a267805119f2\B373217\aticfx32.dll
+ModLoad: 75630000 75638000   C:\WINDOWS\SysWOW64\VERSION.dll
+ModLoad: 6f540000 6f56a000   C:\WINDOWS\System32\DriverStore\FileRepository\u0374770.inf_amd64_0317a267805119f2\B373217\atiu9pag.dll
+ModLoad: 6f540000 6f56a000   C:\WINDOWS\System32\DriverStore\FileRepository\u0374770.inf_amd64_0317a267805119f2\B373217\atiu9pag.dll
+ModLoad: 78d70000 7982c000   C:\WINDOWS\System32\DriverStore\FileRepository\u0374770.inf_amd64_0317a267805119f2\B373217\atiumdag.dll
+ModLoad: 78d70000 7982c000   C:\WINDOWS\System32\DriverStore\FileRepository\u0374770.inf_amd64_0317a267805119f2\B373217\atiumdag.dll
+ModLoad: 79830000 7a5c6000   C:\WINDOWS\System32\DriverStore\FileRepository\u0374770.inf_amd64_0317a267805119f2\B373217\atiumdva.dll
+ModLoad: 79830000 7a5c6000   C:\WINDOWS\System32\DriverStore\FileRepository\u0374770.inf_amd64_0317a267805119f2\B373217\atiumdva.dll
+ModLoad: 744a0000 744c7000   C:\WINDOWS\SysWOW64\amdihk32.dll
+ModLoad: 744a0000 744c7000   C:\WINDOWS\SysWOW64\amdihk32.dll
+direct3d9 vout display debug: Using Direct3D9 Extended API!
+direct3d9 vout display warning: cannot load Direct3D9 Shader Library; HLSL pixel shading will be disabled.
+direct3d9 vout display debug: creating Vout EventThread
+direct3d9 vout display debug: Win32VoutCreateWindow
+main vout display debug: VoutDisplayEvent 'resize' 1366x632
+direct3d9 vout display debug: inclinometer not found. (hr=0x80070490)
+direct3d9 vout display debug: created video sub-window
+direct3d9 vout display debug: Vout EventThread running
+direct3d9 vout display debug: D3D9 device caps 0x1BBEF0 / 0x71
+direct3d9 vout display debug: Direct3d9 Device: AMD Radeon(TM) Vega 3 Graphics 1002 15d8 c4
+ModLoad: 6def0000 6deff000   C:\WINDOWS\SysWOW64\resourcepolicyclient.dll
+ModLoad: 6def0000 6deff000   C:\WINDOWS\SysWOW64\resourcepolicyclient.dll
+direct3d9 vout display warning: trying surface pixel format: DXA9
+direct3d9 vout display debug: selected surface pixel format is DXA9
+main vout display debug: VoutDisplayEvent 'resize' 1296x759
+direct3d9 vout display debug: Direct3D9 scene created successfully
+direct3d9 vout display warning: Direct3D shaders initialization failed !
+direct3d9 vout display debug: Direct3D9 device adapter successfully initialized
+main vout display debug: using vout display module "direct3d9"
+main video output debug: original format sz 1280x720, of (0,0), vsz 1280x720, 4cc DXA9, sar 1:1, msk r0x0 g0x0 b0x0
+qt video output debug: Qt: Fullscreen state changed
+main playlist debug: reusing provided vout
+main generic debug: looking for hw decoder module matching "any": 2 candidates
+main vout display debug: VoutDisplayEvent 'resize' 1366x632
+dxva2 generic debug: Using Direct3D9 Extended API!
+ModLoad: 734d0000 734ec000   C:\WINDOWS\SysWOW64\DXVA2.DLL
+ModLoad: 734d0000 734ec000   C:\WINDOWS\SysWOW64\DXVA2.DLL
+dxva2 generic debug: Reusing Direct3D9 device
+dxva2 generic debug: CreateDevice succeed
+dxva2 generic debug: OurDirect3DCreateDeviceManager9 Success!
+dxva2 generic debug: obtained IDirect3DDeviceManager9
+dxva2 generic debug: - 'MPEG-2 variable-length decoder' is supported
+dxva2 generic debug: - 'MPEG-2 inverse discrete cosine transform' is supported
+dxva2 generic debug: - 'H.264 variable-length decoder, no film grain technology' is supported
+dxva2 generic debug: - 'H.264 variable-length decoder, no film grain technology, Flash' is supported
+dxva2 generic debug: - 'Unknown decoder 0x6719b6fb-0x5cad-0x4acb-0xb00af3bfdec38727' is supported
+dxva2 generic debug: - 'Unknown decoder 0x9901ccd3-0xca12-0x4b7e-0x867ae2223d9255c3' is supported
+dxva2 generic debug: - 'HEVC Main profile' is supported
+dxva2 generic debug: - 'Unknown decoder 0xea72396a-0x67ec-0x4781-0xbede56f498f04ef2' is supported
+dxva2 generic debug: - 'Unknown decoder 0xc152ca8f-0x738c-0x461b-0xad89fc292cf8f162' is supported
+dxva2 generic debug: - 'Unknown decoder 0x514a356c-0x7027-0x4aff-0x8a60afd2c1f672f1' is supported
+dxva2 generic debug: - 'VC-1 variable-length decoder' is supported
+dxva2 generic debug: - 'Unknown decoder 0xca15d19a-0x2b48-0x43d6-0x979e7a6e9c802ff8' is supported
+dxva2 generic debug: - 'MPEG-4 Part 2 variable-length decoder, Simple&Advanced Profile, Avivo' is supported
+dxva2 generic debug: - 'HEVC Main 10 profile' is supported
+dxva2 generic debug: - 'Unknown decoder 0x65d1fa41-0x58af-0x453a-0x9cab5d981156da9f' is supported
+dxva2 generic debug: - 'Unknown decoder 0x2db154b6-0xdbb2-0x4079-0xa3ff60d7a898a6ab' is supported
+dxva2 generic debug: - 'Unknown decoder 0xc74a3fd0-0xd713-0x4581-0xa02e8edfb112ace3' is supported
+dxva2 generic debug: - 'H.264 stereo high profile, mbs flag set' is supported
+dxva2 generic debug: - 'H.264 stereo high profile' is supported
+dxva2 generic debug: - 'MPEG-4 Part 2 variable-length decoder, Simple&Advanced Profile, no GMC' is supported
+dxva2 generic debug: - 'Unknown decoder 0xd1c20509-0xae7b-0x4e72-0xae3b49f88d58992f' is supported
+dxva2 generic debug: - 'VP9 profile 0' is supported
+dxva2 generic debug: - 'VP9 profile 2' is supported
+dxva2 generic debug: - 'Unknown decoder 0x84ad67f6-0x4c21-0x419a-0x9f0b24f0578906c1' is supported
+dxva2 generic debug: - 'Unknown decoder 0x725ad240-0x786c-0x471e-0xad3c38f739936517' is supported
+dxva2 generic debug: - 'Unknown decoder 0x95664ff5-0x9e03-0x4c74-0xbb4f9178d6035e58' is supported
+dxva2 generic debug: - 'Unknown decoder 0x5ef7d40d-0x5b96-0x49e7-0xb41923342094a4cf' is supported
+dxva2 generic debug: - 'Unknown decoder 0xc58b9a06-0x7e89-0x11e1-0xbb0070b34824019b' is supported
+dxva2 generic debug: - 'Unknown decoder 0x00000000-0x0000-0x0000-0x0000000000000000' is supported
+dxva2 generic debug: Trying to use 'H.264 variable-length decoder, no film grain technology' as input
+dxva2 generic debug: NV12 is supported for output
+dxva2 generic debug: Using decoder output 'NV12'
+dxva2 generic debug: va_pool_SetupDecoder id 27 1280x720 count: 23
+dxva2 generic debug: IDirectXVideoAccelerationService_CreateSurface succeed with 23 surfaces (1280x720)
+dxva2 generic debug: we got 3 decoder configurations
+dxva2 generic debug: configuration[0] ConfigBitstreamRaw 2
+dxva2 generic debug: configuration[1] ConfigBitstreamRaw 2
+dxva2 generic debug: configuration[2] ConfigBitstreamRaw 2
+dxva2 generic error: IDirectXVideoDecoderService_CreateVideoDecoder failed
+main generic debug: no hw decoder modules matched
+main vout display debug: removing module "direct3d9"
+direct3d9 vout display debug: Direct3D9 scene released successfully
+(908.714): Unknown exception - code 000006f4 (first chance)
+direct3d9 vout display error: SetThumbNailClip failed: 0x800706f4
+direct3d9 vout display debug: Win32 Vout EventThread terminating
+direct3d9 vout display debug: Win32VoutCloseWindow
+direct3d9 vout display debug: WinProc WM_DESTROY
+main video output debug: deinterlace -1, mode auto, is_needed 0
+main video output debug: Opening vout display wrapper
+main vout display debug: looking for vout display module matching "any": 12 candidates
+ModLoad: 78d70000 79104000   C:\WINDOWS\SysWOW64\D3DCOMPILER_47.dll
+ModLoad: 78d70000 79104000   C:\WINDOWS\SysWOW64\D3DCOMPILER_47.dll
+direct3d11 vout display debug: creating Vout EventThread
+direct3d11 vout display debug: Win32VoutCreateWindow
+main vout display debug: VoutDisplayEvent 'resize' 1366x632
+direct3d11 vout display debug: inclinometer not found. (hr=0x80070490)
+direct3d11 vout display debug: created video sub-window
+direct3d11 vout display debug: Vout EventThread running
+ModLoad: 73f50000 740b7000   C:\WINDOWS\System32\DriverStore\FileRepository\u0374770.inf_amd64_0317a267805119f2\B373217\aticfx32.dll
+ModLoad: 73f50000 740b7000   C:\WINDOWS\System32\DriverStore\FileRepository\u0374770.inf_amd64_0317a267805119f2\B373217\aticfx32.dll
+ModLoad: 75630000 75638000   C:\WINDOWS\SysWOW64\VERSION.dll
+ModLoad: 741c0000 741ee000   C:\WINDOWS\System32\DriverStore\FileRepository\u0374770.inf_amd64_0317a267805119f2\B373217\atiuxpag.dll
+ModLoad: 741c0000 741ee000   C:\WINDOWS\System32\DriverStore\FileRepository\u0374770.inf_amd64_0317a267805119f2\B373217\atiuxpag.dll
+(908.714): Access violation - code c0000005 (first chance)
+First chance exceptions are reported before any exception handling.
+This exception may be expected and handled.
+eax=740d5fdc ebx=740d5fdc ecx=740c0000 edx=740c0000 esi=741c0000 edi=80004005
+eip=73f64b8d esp=73b4ec38 ebp=73b4ec54 iopl=0         nv up ei pl zr na pe nc
+cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00210246
+aticfx32!OpenAdapter10_2+0xdfed:
+73f64b8d 833800          cmp     dword ptr [eax],0    ds:002b:740d5fdc=????????
+0:018> g
+(908.714): Access violation - code c0000005 (!!! second chance !!!)
+eax=740d5fdc ebx=740d5fdc ecx=740c0000 edx=740c0000 esi=741c0000 edi=80004005
+eip=73f64b8d esp=73b4ec38 ebp=73b4ec54 iopl=0         nv up ei pl zr na pe nc
+cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00210246
+aticfx32!OpenAdapter10_2+0xdfed:
+73f64b8d 833800          cmp     dword ptr [eax],0    ds:002b:740d5fdc=????????
+0:018> !analyze -v
+*******************************************************************************
+*                                                                             *
+*                        Exception Analysis                                   *
+*                                                                             *
+*******************************************************************************
+
+
+KEY_VALUES_STRING: 1
+
+    Key  : AV.Fault
+    Value: Read
+
+    Key  : Analysis.CPU.mSec
+    Value: 3483
+
+    Key  : Analysis.DebugAnalysisManager
+    Value: Create
+
+    Key  : Analysis.Elapsed.mSec
+    Value: 37112
+
+    Key  : Analysis.Init.CPU.mSec
+    Value: 1155
+
+    Key  : Analysis.Init.Elapsed.mSec
+    Value: 35853
+
+    Key  : Analysis.Memory.CommitPeak.Mb
+    Value: 95
+
+    Key  : Timeline.OS.Boot.DeltaSec
+    Value: 47651
+
+    Key  : Timeline.Process.Start.DeltaSec
+    Value: 35
+
+    Key  : WER.OS.Branch
+    Value: vb_release
+
+    Key  : WER.OS.Timestamp
+    Value: 2019-12-06T14:06:00Z
+
+    Key  : WER.OS.Version
+    Value: 10.0.19041.1
+
+    Key  : WER.Process.Version
+    Value: 3.0.17.4
+
+
+NTGLOBALFLAG:  2000000
+
+PROCESS_BAM_CURRENT_THROTTLED: 0
+
+PROCESS_BAM_PREVIOUS_THROTTLED: 0
+
+APPLICATION_VERIFIER_FLAGS:  0
+
+APPLICATION_VERIFIER_LOADED: 1
+
+EXCEPTION_RECORD:  (.exr -1)
+ExceptionAddress: 73f64b8d (aticfx32!OpenAdapter10_2+0x0000dfed)
+   ExceptionCode: c0000005 (Access violation)
+  ExceptionFlags: 00000000
+NumberParameters: 2
+   Parameter[0]: 00000000
+   Parameter[1]: 740d5fdc
+Attempt to read from address 740d5fdc
+
+FAULTING_THREAD:  00000714
+
+PROCESS_NAME:  vlc.exe
+
+READ_ADDRESS:  740d5fdc 
+
+ERROR_CODE: (NTSTATUS) 0xc0000005 - The instruction at 0x%p referenced memory at 0x%p. The memory could not be %s.
+
+EXCEPTION_CODE_STR:  c0000005
+
+EXCEPTION_PARAMETER1:  00000000
+
+EXCEPTION_PARAMETER2:  740d5fdc
+
+STACK_TEXT:  
+WARNING: Stack unwind information not available. Following frames may be wrong.
+73b4ec54 73f64600     73b4ec70 00000000 0bf0ae18 aticfx32!OpenAdapter10_2+0xdfed
+73b4ed7c 73f56bb0     73b4edb8 6b692d8b 73b4ed9c aticfx32!OpenAdapter10_2+0xda60
+73b4ed84 6b692d8b     73b4ed9c 0bf0ae18 73b4efb8 aticfx32!OpenAdapter10_2+0x10
+73b4edb8 6b69185f     a56ed716 0000c100 887a0005 d3d11!NDXGI::CUMDAdapter::OpenAdapter10_2+0x72
+73b4ee18 6b69105b     73b4ef88 00000002 00000800 d3d11!CCreateDeviceCache::CUMDAdapterCache::Load+0x120
+73b4eea8 6b690574     73b4ef08 0000c100 00000001 d3d11!CCreateDeviceCache::CAdapterCache::ResolveUMDAndVersion+0x135
+73b4f06c 6b693ee0     00000000 00000000 00000001 d3d11!D3D11CoreCreateDevice+0x4d4
+73b4f254 6b694441     00000000 00000001 00000000 d3d11!D3D11CreateDeviceAndSwapChainImpl+0x580
+73b4f290 734901ca     00000000 00000001 00000000 d3d11!D3D11CreateDeviceImpl+0x41
+73b4f2bc 77a803e6     77970000 73b4f338 2e438ea4 libdirect3d11_plugin!vlc_entry_license__3_0_0f+0x190ba
+73b4f2d0 734738f1     0df10e60 2e438ea4 00000000 KERNELBASE!FreeLibrary+0x16
+73b4f374 77c03c26     00000000 00000000 00000000 libdirect3d11_plugin+0x38f1
+73b4f3c4 762c7379     05ea0000 00000000 2e30ffc0 ntdll!RtlFreeHeap+0x46
+73b4f410 6770563f     678c7eac 2dfd9fe0 73b4f500 msvcrt!free+0x69
+73b4f500 676f8487     0df10e60 00000003 734ae09c libvlccore!vlc_rand_bytes+0x76f
+73b4f530 7347d093     0df10e60 00000003 734ae09c libvlccore!vlc_Log+0x47
+73b4f580 7347a858     2e25aab8 73b4f5b0 73b4f59c libdirect3d11_plugin!vlc_entry_license__3_0_0f+0x5f83
+73b4f5c4 762c72da     00000001 00000210 0df10e60 libdirect3d11_plugin!vlc_entry_license__3_0_0f+0x3748
+73b4f5e0 73475221     0df10e60 2e438ea4 00000001 msvcrt!calloc+0x1a
+73b4f620 6766ca50     0df10e60 73b4f71c 00001000 libdirect3d11_plugin+0x5221
+73b4f650 6766ce0e     6766ca00 73b4f71c 00000003 libvlccore!vlc_ureduce+0x380
+73b4f6bc 7630ad01     00796e61 31786cf0 31786cd0 libvlccore!vlc_module_load+0x20e
+73b4f700 6766d364     0df10e60 677c8216 677c9852 msvcrt!_VEC_memzero+0x36
+73b4f730 676c4002     0df10e60 677c8216 677c9852 libvlccore!module_need+0x34
+73b4f750 67705b9c     31786d14 0df10e80 00000000 libvlccore!vout_display_GetDefaultDisplaySize+0x672
+00000000 00000000     00000000 00000000 00000000 libvlccore!vlc_mutex_unlock+0x4c
+
+
+SYMBOL_NAME:  aticfx32+dfed
+
+MODULE_NAME: aticfx32
+
+IMAGE_NAME:  aticfx32.dll
+
+STACK_COMMAND:  dt ntdll!LdrpLastDllInitializer BaseDllName ; dt ntdll!LdrpFailureData ; ~18s ; .cxr ; kb
+
+FAILURE_BUCKET_ID:  INVALID_POINTER_READ_AVRF_c0000005_aticfx32.dll!Unknown
+
+OS_VERSION:  10.0.19041.1
+
+BUILDLAB_STR:  vb_release
+
+OSPLATFORM_TYPE:  x86
+
+OSNAME:  Windows 10
+
+IMAGE_VERSION:  30.0.13024.4001
+
+FAILURE_ID_HASH:  {2a99cc1e-a3d7-ab4e-ef74-90826148529c}
+
+Followup:     MachineOwner
+---------
+
